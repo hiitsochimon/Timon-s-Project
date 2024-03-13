@@ -1,0 +1,14 @@
+[user]
+	name = Timothy Ochieng
+	email = mayoonde072@gmail.com
+[color]
+	ui = auto
+[merge]
+	conflictsyle = diff3
+[core]
+	editor = code --wait
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
